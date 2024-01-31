@@ -1,0 +1,29 @@
+settings.json: 
+
+    "settings.cycle": [{
+        "id": "lineNumbers",
+        "values":[
+            {
+                "editor.lineNumbers": "off",
+                "editor.folding": false,
+                "editor.glyphMargin": false
+            },
+            {
+                "editor.lineNumbers": "on",
+                "editor.folding": true,
+                "editor.glyphMargin": true
+    
+            }
+        ]
+    }],
+
+keybindings.json:
+
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+l",
+        "command": "settings.cycle.lineNumbers",
+        "when": "editorFocus"
+    }  
+]
