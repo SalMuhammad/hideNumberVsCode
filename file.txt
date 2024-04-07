@@ -1,5 +1,9 @@
-settings.json: 
+install "settings cycler" in extenstion
 
+
+> open user settings (json)
+
+settings.json: 
     "settings.cycle": [{
         "id": "lineNumbers",
         "values":[
@@ -12,18 +16,26 @@ settings.json:
                 "editor.lineNumbers": "on",
                 "editor.folding": true,
                 "editor.glyphMargin": true
-    
             }
         ]
     }],
 
+
+>open keyboard shortcuts (json)
 keybindings.json:
 
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
-        "key": "cmd+l",
+        "key": "ctrl+l",
         "command": "settings.cycle.lineNumbers",
         "when": "editorFocus"
     }  
 ]
+
+
+daftar ektension:
+1. auto rename tag
+2. material icon theme
+3. vscode-pets
+4. tailwindcss
